@@ -11,17 +11,7 @@
 |
 */
 
-Route::get('/holamundo', function () {
-    return view('welcome');
-});
 
-Route::get('/', function () {
-    return view("pruebaGala");
-});
-
-Route::get('/infoNosotras', function(){
-	return view("infoNosotras");
-});
+Route::get('/', 'HomeController@index');
 
 
-// wildcard -> 404
