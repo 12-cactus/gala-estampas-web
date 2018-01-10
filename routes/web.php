@@ -14,4 +14,4 @@
 
 Route::get('/', 'HomeController@index');
 
-
+Route::post('/contacto', 'HomeController@contact');

@@ -181,26 +181,46 @@
             <div class="col-md-12 col-sm-12">
                 <div class="col-md-4 col-sm-6" style="padding-left:0px;">
                     <h3 class="cont-title">Email</h3>
-                    <div id="sendmessage">Tu mensaje ha sido enviado. Muchas Gracias!</div>
-                    <div id="errormessage"></div>
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    @if (Session::has('form-success'))
+                        <div class="alert alert-success alert-block">
+                            <button type="button" class="close" data-dismiss="alert">×</button>
+                            <strong>{{ Session::get('form-success') }}</strong>
+                        </div>
+                    @endif
+                    <div id="error-message"></div>
                     <div class="contact-info">
-                        <form action="" method="post" role="form" class="contactForm">
+                        <form action="/contacto" method="post" role="form" class="contactForm">
+                            {{ csrf_field() }}
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:3" data-msg="Debe ingresar un nombre de al menos 3 caracteres" />
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre"  />
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Mail" data-rule="email" data-msg="Ingrese un Mail válido" />
+                                <input type="email"
+                                       class="form-control"
+                                       name="email"
+                                       id="email"
+                                       placeholder="Mail"
+                                       value="{{ old('email') }}">
+                                <div class="validation">{{ $errors->has('email') ? $errors->first('email') : '' }}</div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"  />
                                 <div class="validation"></div>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:8" data-msg="Ingrese un asunto de al menos 8 caracteres" />
-                                <div class="validation"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Escribenos algo para contactarnos" placeholder="Mensaje"></textarea>
+                                <textarea class="form-control" name="message" rows="5"  placeholder="Mensaje"></textarea>
                                 <div class="validation"></div>
                             </div>
                             <button type="submit" class="btn btn-send">Enviar</button>
