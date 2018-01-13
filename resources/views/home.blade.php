@@ -175,7 +175,7 @@
                 <div class="section-title">
                     <h2 class="head-title black">Contacto</h2>
                     <hr class="botm-line">
-                    <p class="sec-para black">Puedes contactarnos por mail, facebook, whatsApp o por celular (en horario de oficina)</p>
+                    <p class="sec-para black">Podés contactarnos por mail, facebook, whatsApp o por celular.</p>
                 </div>
             </div>
             <div class="col-md-12 col-sm-12">
@@ -183,11 +183,7 @@
                     <h3 class="cont-title">Email</h3>
                     @if ($errors->any())
                         <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
+                            <p class="alert-danger"> Completa correctamente los campos requeridos.</p>
                         </div>
                     @endif
                     @if (Session::has('form-success'))
@@ -201,8 +197,13 @@
                         <form action="/contacto" method="post" role="form" class="contactForm">
                             {{ csrf_field() }}
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre"  />
-                                <div class="validation"></div>
+                                <input type="text"
+                                       name="name"
+                                       class="form-control"
+                                       id="name"
+                                       placeholder="Nombre"
+                                       value="{{ old('name') }}"/>
+                                <div class="validation">{{ $errors->has('name') ? $errors->first('name') :'' }}</div>
                             </div>
                             <div class="form-group">
                                 <input type="email"
@@ -215,13 +216,22 @@
                             </div>
 
                             <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"  />
-                                <div class="validation"></div>
+                                <input type="text"
+                                       class="form-control"
+                                       name="subject"
+                                       id="subject"
+                                       placeholder="Asunto"
+                                       value="{{ old('subject') }}"/>
+                                <div class="validation">{{ $errors->has('subject') ? $errors->first('subject'):'' }}</div>
                             </div>
 
                             <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5"  placeholder="Mensaje"></textarea>
-                                <div class="validation"></div>
+                                <textarea class="form-control"
+                                          name="message"
+                                          rows="5"
+                                          placeholder="Mensaje"
+                                          valuue="{{ old('message') }}"></textarea>
+                                <div class="validation">{{ $errors->has('message') ? $errors->first('message'):'' }}</div>
                             </div>
                             <button type="submit" class="btn btn-send">Enviar</button>
                         </form>
