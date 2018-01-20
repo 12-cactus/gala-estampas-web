@@ -14,7 +14,7 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#header">Inicio</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#feature">Feature</a></li>
+                            <li><a href="#Amigos">Amigos</a></li>
                             <li><a href="#contact">Contacto</a></li>
                         </ul>
                     </div>
@@ -97,29 +97,30 @@
 </section>
 <!---->
 <!---->
-<section id="feature" class="section-padding">
+<section id="Amigos" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-3 wow fadeInLeft delay-05s">
                 <div class="section-title">
-                    <h2 class="head-title">Features</h2>
+                    <h2 class="head-title">Amigos</h2>
                     <hr class="botm-line">
-                    <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                    <p class="sec-para">Consulta las fechas y lugares de las próximas expos y encuentros y ya que estás podes
+                        visitar las páginas de quienes nos quieren y apoyan.</p>
                 </div>
             </div>
             <div class="col-md-9">
                 <div class="col-md-6 wow fadeInRight delay-02s">
                     <div class="icon">
-                        <i class="fa fa-paint-brush"></i>
+                        <i class="fa fa-diamond" aria-hidden="true"></i>
                     </div>
                     <div class="icon-text">
-                        <h3 class="txt-tl">Easy to Learn and Design</h3>
-                        <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                        <h3 class="txt-tl">Programa Emprender</h3>
+                        <p class="txt-para">http://www.berazategui.gov.ar/emprender/ </p>
                     </div>
                 </div>
                 <div class="col-md-6 wow fadeInRight delay-02s">
                     <div class="icon">
-                        <i class="fa fa-cogs"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
                     <div class="icon-text">
                         <h3 class="txt-tl">Bootstrap 3.3.2</h3>
@@ -128,7 +129,7 @@
                 </div>
                 <div class="col-md-6 wow fadeInRight delay-04s">
                     <div class="icon">
-                        <i class="fa fa-mobile"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
                     <div class="icon-text">
                         <h3 class="txt-tl">Responsive Design</h3>
@@ -137,7 +138,7 @@
                 </div>
                 <div class="col-md-6 wow fadeInRight delay-04s">
                     <div class="icon">
-                        <i class="fa fa-desktop"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
                     <div class="icon-text">
                         <h3 class="txt-tl">No Coding, No Shortcodes</h3>
@@ -146,7 +147,7 @@
                 </div>
                 <div class="col-md-6 wow fadeInRight delay-06s">
                     <div class="icon">
-                        <i class="fa fa-lightbulb-o"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
                     <div class="icon-text">
                         <h3 class="txt-tl">High Coversion</h3>
@@ -155,7 +156,7 @@
                 </div>
                 <div class="col-md-6 wow fadeInRight delay-06s">
                     <div class="icon">
-                        <i class="fa fa-clock-o"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
                     <div class="icon-text">
                         <h3 class="txt-tl">Save Tons of Time</h3>
@@ -175,7 +176,7 @@
                 <div class="section-title">
                     <h2 class="head-title black">Contacto</h2>
                     <hr class="botm-line">
-                    <p class="sec-para black">Podés contactarnos por mail, facebook, whatsApp o por celular.</p>
+                    <p class="sec-para black">Completa tus datos y nos pondremos en contacto a la brevedad.</p>
                 </div>
             </div>
             <div class="col-md-12 col-sm-12">
@@ -239,12 +240,6 @@
 
                 </div>
                 <div class="col-md-4 col-sm-6">
-                    <h3 class="cont-title"><br></h3>
-                    <div class="location-info">
-                        <p class="white"><span aria-hidden="true" class="fa fa-map-marker"></span>Calle 114 2076, Berazategui, Bs As</p>
-                        <p class="white"><span aria-hidden="true" class="fa fa-phone"></span>Celular: 15 3091 5410</p>
-                        <p class="white"><span aria-hidden="true" class="fa fa-envelope"></span>Mail: <a href="" class="link-dec">galaestampas@gmail.com</a></p>
-                    </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-icon-container hidden-md hidden-sm hidden-xs">
