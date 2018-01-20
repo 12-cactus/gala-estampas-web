@@ -29,7 +29,7 @@ class HomeController extends Controller
                 ->withInput();
         }
 
-        Mail::to('sirdemian@gmail.com')->send(new ContactUs($request->all()));
+        Mail::to('galaestampas@gmail.com')->send(new ContactUs($request->all()));
 
         return redirect('/#contact')->with('form-success', 'Mensaje enviado!! Gracias');
     }

@@ -46,12 +46,12 @@
             <div class="col-md-9 col-sm-12">
                 <div class="col-md-4 col-sm-6 padding-right-zero">
                     <div class="portfolio-box design">
-                        <img src="img/port01.jpg" alt="" class="img-responsive">
+                        <img src="img/Mereces_lo_que_sueñas.jpg" alt="" class="img-responsive">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 padding-right-zero">
                     <div class="portfolio-box design">
-                        <img src="img/port02.jpg" alt="" class="img-responsive">
+                        <img src="img/set_lata_yerba_azucar.jpg" alt="" class="img-responsive">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 padding-right-zero">
@@ -120,8 +120,7 @@
                         <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
                     <div class="icon-text">
-                        <h3 class="txt-tl">Bootstrap 3.3.2</h3>
-                        <p class="txt-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula felis euismod semper. </p>
+                        <a href="https://milacalcabrini.mitiendanube.com/como-comprar/"> <img src="img/milaLogo.png" class="img-responsive" width=66%> </a>
                     </div>
                 </div>
                 <div class="col-md-6 wow fadeInRight delay-04s">
