@@ -13,7 +13,7 @@
                     <div class="collapse navbar-collapse navbar-right" id="mynavbar">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#header">Inicio</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#productos">Productos</a></li>
                             <li><a href="#Amigos">Amigos</a></li>
                             <li><a href="#contact">Contacto</a></li>
                         </ul>
@@ -32,16 +32,15 @@
         </div>
     </div>
 </header>
-<!--/ header-->
-<!---->
-<section class="section-padding wow fadeInUp delay-02s" id="portfolio">
+<section class="section-padding wow fadeInUp delay-02s" id="productos">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-12">
                 <div class="section-title">
-                    <h2 class="head-title">Portfolio</h2>
+                    <h2 class="head-title">Productos</h2>
                     <hr class="botm-line">
-                    <p class="sec-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+                    <p class="sec-para">Personalizamos tus regalos para que sean más tuyos. Cuidamos la calidad de nuestros
+                        productos controlando cada detalle.</p>
                 </div>
             </div>
             <div class="col-md-9 col-sm-12">
@@ -79,7 +78,6 @@
         </div>
     </div>
 </section>
-<!---->            <!--en style.css está la imagen a cambiar-->
 <section class="section-padding parallax bg-image-2 section wow fadeIn delay-08s" id="cta-2">
     <div class="container">
         <div class="row">
@@ -114,8 +112,7 @@
                         <i class="fa fa-diamond" aria-hidden="true"></i>
                     </div>
                     <div class="icon-text">
-                        <h3 class="txt-tl">Programa Emprender</h3>
-                        <p class="txt-para">http://www.berazategui.gov.ar/emprender/ </p>
+                        <a href="http://www.berazategui.gov.ar/emprender/"> <img src="img/emprenderImg.png" class="img-responsive"> </a>
                     </div>
                 </div>
                 <div class="col-md-6 wow fadeInRight delay-02s">
