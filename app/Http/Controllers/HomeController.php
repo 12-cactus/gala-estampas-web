@@ -30,7 +30,7 @@ class HomeController extends Controller
                 ->withInput();
         }
 
-        Mail::to(env('MAIL_USERNAME'))->send(new Mailable());                  //new ContactUs($request->all()));
+        Mail::to(config('mail.to contact'))->send(new ContactUs($request->all()));
         return redirect('/#contact')->with('form-success', 'Mensaje enviado!! Gracias');
     }
 
