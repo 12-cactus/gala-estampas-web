@@ -35,7 +35,7 @@ class ContactUs extends Mailable
      */
     public function build()
     {
-        return $this->from('example@example.com')
+        return $this->from(config('mail.from.address'))
             ->view('emails.contact-us', $this->data);
     }
 }

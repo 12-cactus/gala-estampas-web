@@ -59,7 +59,7 @@ return [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
-
+    'to contact'=> env('MAIL_TO_DEFAULT', 'hello@example.com'),
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol

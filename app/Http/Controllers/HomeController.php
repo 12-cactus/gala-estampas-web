@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactUs;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Mailable;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
@@ -29,8 +30,8 @@ class HomeController extends Controller
                 ->withInput();
         }
 
-        Mail::to('galaestampas@gmail.com')->send(new ContactUs($request->all()));
-
+        Mail::to(config('mail.to contact'))->send(new ContactUs($request->all()));
         return redirect('/#contact')->with('form-success', 'Mensaje enviado!! Gracias');
     }
+
 }
