@@ -27,7 +27,7 @@
                 <h2 class="top-title">Regalos con Diseño</h2>
                 <h3 class="title">Gala Estampas</h3>
                 <h4 class="sub-title">Objetos personalizados que te acompañan día a día</h4>
-                <button type="submit" class="btn btn-submit">Promociones</button>
+                <button type="submit" class="btn btn-submit" onclick=''>Promociones</button>
             </div>
         </div>
     </div>

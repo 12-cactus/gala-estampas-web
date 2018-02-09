@@ -14,4 +14,6 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/promociones', 'HomeController@promos');
+
 Route::post('/contacto', 'HomeController@contact');

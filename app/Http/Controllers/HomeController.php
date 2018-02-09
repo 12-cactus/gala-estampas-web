@@ -15,6 +15,10 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function promos(){
+        return view('promos');
+    }
+
     public function contact(Request $request)
     {
         $validator = Validator::make($request->all(), [
