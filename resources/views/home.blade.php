@@ -2,7 +2,7 @@
 
 @section('content')
 <!--header-->
-<header class="main-header" id="header">   <!--en style.css está la imagen a cambiar-->
+<header class="main-header" id="header">
     <div class="bg-color">
         <!--nav-->
         <nav class="nav navbar-default navbar-fixed-top">
@@ -27,7 +27,7 @@
                 <h2 class="top-title">Regalos con Diseño</h2>
                 <h3 class="title">Gala Estampas</h3>
                 <h4 class="sub-title">Objetos personalizados que te acompañan día a día</h4>
-                <button type="submit" class="btn btn-submit" onclick=''>Promociones</button>
+                <a href='{{ url('/promociones')}}' class="btn btn-submit">Promociones</a>
             </div>
         </div>
     </div>
