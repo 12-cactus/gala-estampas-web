@@ -23,8 +23,8 @@
                 </div>
                 <div class="col-sm-5 footer-social">
                     <div class="pull-right hidden-xs hidden-sm">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/GalaEstampas/"><i class="fa fa-facebook"></i></a>
+                        <a href="http://www.thepictaram.club/instagram/galaestampas"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
