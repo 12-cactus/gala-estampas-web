@@ -3,3 +3,4 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/modal.js"></script>
